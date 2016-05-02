@@ -1,7 +1,7 @@
 # Site settings
 title: eviloctopus
 email: yratof@gmail.com
-description: Games
+description: A tiny studio that makes games
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://eviloctopus.co.uk" # the base hostname & protocol for your site
 permalink: /:year/:month/:title/
@@ -10,7 +10,7 @@ github_username:  yratof
 timezone: Europe/Oslo
 
 # Extra things
-exclude: [ 'node_modules', 'post', 'animation', 'illustration' ]
+exclude: [ 'node_modules' ]
 
 # Build settings
 markdown: kramdown

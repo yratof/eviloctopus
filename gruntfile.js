@@ -42,7 +42,6 @@ module.exports = function (grunt) {
                 tasks: [
                     'sass',
                     'postcss:dist',
-                    'combine_mq',  
                 ]
             }
         },
@@ -72,7 +71,7 @@ module.exports = function (grunt) {
             options: {
                 map: false,
                 processors: [
-                    require('autoprefixer-core')({
+                    require('autoprefixer')({
                         browsers: ['> 20%', 'last 10 versions', 'Firefox > 20']
                     })
                 ],
@@ -81,18 +80,6 @@ module.exports = function (grunt) {
             dist: {
                 src: '_site/css/*.css'
             }
-        },
-
-        // Combine MQ's, but lose critical css
-        combine_mq: {
-          target: {
-            files: {
-              '_site/css/main.css': ['_site/css/main.css']
-            },
-            options: {
-              beautify: false
-            }
-          }
         },
 
         // run tasks in parallel
@@ -121,11 +108,10 @@ module.exports = function (grunt) {
 
     // Register build as the default task fallback
     grunt.registerTask(
-        'default', 
+        'default',
         'build',
-        'combine_mq', // Combine MQ's
         'postcss:dist', // Post Process with Auto-Prefix
-        'newer:imagemin:dynamic', // Compress all images
+        'imagemin:dynamic', // Compress all images
         'concurrent:serve'
 
     );
