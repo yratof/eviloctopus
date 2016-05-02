@@ -1,0 +1,29 @@
+---
+layout: home
+---
+
+  <div class="home wrap clearfix ">
+
+    <!-- classic yratof logo.-->
+    <div class="ident">
+      <h1 class="ident--title">
+        <small class="ident--subtitle">A small games</small>
+        <span>evil<br/>octopus</span>
+      </h1>
+    </div>
+
+    <!-- navigation of all my things -->
+    <div class="portfolio--navigation pnav">
+      <!-- topic -->
+      <aside class="pnav--section">
+        <h2 class="pnav--title">Upcoming games</h2>
+        <ul class="pnav--list">
+          {% for post in site.games %}
+            {% if post.title %}
+            <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </aside>
+    </div>
+  </div>
