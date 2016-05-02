@@ -18,7 +18,7 @@ layout: home
       <aside class="pnav--section">
         <h2 class="pnav--title">Upcoming games</h2>
         <ul class="pnav--list">
-          {% for post in site.games %}
+          {% for post in site.posts %}
             {% if post.title %}
             <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
             {% endif %}
