@@ -8,6 +8,8 @@ tags:
 ---
 
 
-Tokyo has been destroyed again by something the size of a city. You work for that thing, in fact, you’re pretty much it’s bitch.
+A major city has been destroyed again by something the size of a city.
 
-As a megakaiju tramples cities, it’s your job to sort through the rubble to salvage all the good stuff.
+You work for that 'thing', in fact, you’re pretty much it’s clean up crew.
+
+As it tramples cities, it’s your job to sort through the rubble to salvage all the good stuff.
